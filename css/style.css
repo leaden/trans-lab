@@ -84,10 +84,17 @@ body {
   height: 200px;
 }
 
+#profile{
+	margin-top: 30px;
+	margin-left: 120px;
+	width: 40%;
+}
+
 #inputCorreo2{
 	margin-top: 20px;
 	border:none;
 	height: 50px;
+	width: 100%;
 }
 
 .md-form{
@@ -113,6 +120,11 @@ body {
 	color:white;
 	font-family: 'Arial', sans-serif;
 }
+
+#accordion{
+	margin-top: 20px;
+}
+
 
 /*pantalla ver saldo*/
 
