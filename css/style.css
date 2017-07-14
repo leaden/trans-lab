@@ -5,9 +5,11 @@
 	padding: 0;
 }
 
-body{
-	background-color: #3D3F41;
+body {
+
+    background-color: #3D3F41;
 }
+
 
 /*pantalla inicio*/
 .titulo{
@@ -103,4 +105,18 @@ body{
 .btn-default.agregar{
 	height: 50px;
 	color: white;
+}
+
+/*pantalla preguntas*/
+
+.container.avatar h1{
+	color:white;
+	font-family: 'Arial', sans-serif;
+}
+
+/*pantalla ver saldo*/
+
+.caret{
+	margin-top: 10px;
+	
 }
