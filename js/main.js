@@ -1,5 +1,6 @@
 /* Holiii acá va tu código también */
 
+/*codigo api*/
 $(document).ready(function(){
   $.$.ajax({
   	url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=22179163',
@@ -18,7 +19,7 @@ $(document).ready(function(){
   
 });
 
-
+/*codigo nav*/
     $(document).ready(function(){
        
        //Navigation Menu Slider
@@ -30,8 +31,6 @@ $(document).ready(function(){
       		e.preventDefault();
       		$('body').removeClass('nav-expanded');
       	});
-      	
-      	
       	// Initialize navgoco with default options
         $(".main-menu").navgoco({
             caret: '<span class="caret"></span>',
@@ -48,6 +47,36 @@ $(document).ready(function(){
                 easing: 'swing'
             }
         });
-  
-        	
       });
+
+/*validacion usuario*/
+function correo(){
+        var email = $("#inputCorreo").val();
+        console.log(emailValue);
+        if (!(/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/).test(emailValue)){
+            $("#espacio-error-email").append('<p class="red">Tu email es invalido</p>');
+            $("#inputCorreo").val("");
+            console.log("");
+            return false;
+        } else{
+            localStorage.setItem('email',email);
+            return true;
+        }
+    }
+    /*validacion contraseña*/
+    function contraseña(){
+        var pass = $("#inputPass").val();
+          console.log(pass);
+        if (!(/^\d{8}(0-9)*$/.test("#inputPass").val())) {
+        $("#error-contraseña").append('<p class="red">Tu contraseña es invalida</p>');
+            $("#inputPass").val("");
+            console.log("");
+            return false;
+        }else{
+            localStorage.setItem('pass',pass);
+            return true;
+        }
+    }
+
+
+
