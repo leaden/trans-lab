@@ -9,6 +9,7 @@ body{
 	background-color: #3D3F41;
 }
 
+/*pantalla inicio*/
 .titulo{
 	font-family: 'Anton', sans-serif;
 	color: #F6A800;
@@ -46,9 +47,25 @@ body{
 
 .text-center.acount a{
 	color: white;
-	
+
 }
 
 .text-center.acount.yellow a{
 	color: #F6A800;
+}
+
+
+/*pantalla opciones*/
+
+
+.btn-group{
+	margin-top: 150px;
+}
+
+.btn-default{
+	margin-top: 20px;
+}
+
+.navbar-header{
+	background-color: black;
 }
