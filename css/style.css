@@ -25,6 +25,7 @@ body{
   width: 100%;
   display: block;
   position: relative;
+  height: 50px;
 }
 
 #inputPass{
@@ -32,6 +33,7 @@ body{
   width: 100%;
   display: block;
   position: relative;
+  height: 50px;
 }
 
 .btn-default{
@@ -67,5 +69,38 @@ body{
 }
 
 .navbar-header{
-	background-color: black;
+	background-color: #3D3F41;
+}
+
+
+/*pantalla opcion-perfil*/
+
+.container.avatar {
+  position: relative;
+  background-color: #F6A800;
+  width: 100%;
+  height: 200px;
+}
+
+#inputCorreo2{
+	margin-top: 20px;
+	border:none;
+	height: 50px;
+}
+
+.md-form{
+	margin-top: 20px;
+	border: none;
+	text-decoration: none;
+}
+
+.container.tarjeta{
+	background-color: #E0E0E1;
+	width: 100%;
+	height: 390px;
+}
+
+.btn-default.agregar{
+	height: 50px;
+	color: white;
 }
